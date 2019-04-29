@@ -255,9 +255,13 @@ footer {
         width: 200px;
         margin-bottom: 25px;
     }
+
+    .middle-img {
+        width: 100%;
+    }
 }
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
     .header-img {
         display: none;
     }
@@ -265,4 +269,35 @@ footer {
     .innovationContainer {
         width: 100%;
     }
-} */
+    
+    nav img {
+        width: 200px;
+        margin-bottom: 25px;
+    }
+
+    nav .nav-anchor-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .nav-anchor-items a {
+        border-top: 1px solid gray;
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .last-element {
+        border-bottom: 1px solid gray;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+
+    .content-block {
+        margin: 25px 10px;
+    }
+}
