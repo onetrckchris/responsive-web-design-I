@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    padding: 0px 25px;
 }
 blockquote, q {
 	quotes: none;
@@ -75,7 +76,12 @@ nav {
 nav a{
     text-decoration: none;
     color: darkgrey;
-    margin-right: 49px;
+    margin-right: 25px;
+    margin-left: 25px;
+    align-self: center;
+}
+
+.nav-anchor-items {
     align-self: center;
 }
 
@@ -230,3 +236,33 @@ footer {
     text-align: center;
     margin: 75px 0 20px 0;
 }
+
+@media (max-width: 800px) {
+    .header-img {
+        display: none;
+    }
+
+    .innovationContainer {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    nav img {
+        width: 200px;
+        margin-bottom: 25px;
+    }
+}
+
+/* @media (max-width: 500px) {
+    .header-img {
+        display: none;
+    }
+
+    .innovationContainer {
+        width: 100%;
+    }
+} */
