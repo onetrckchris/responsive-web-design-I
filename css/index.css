@@ -132,7 +132,6 @@ h2 {
     border: 1px solid black;
     height: 320px;
     width: 31%;
-    /* Blaze it */
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -144,8 +143,11 @@ h2 {
     flex-direction: column;
 }
 
+.services-header-img {
+    width: 100%;
+}
+
 .main-content-section {
-    height: 800px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -163,9 +165,9 @@ h2 {
 .content-card {
     background-color: #F4F3F4;
     border: 1px solid black;
-    height: 240px;
-    width: 420px;
+    width: 47%;
     /* Blaze it */
+    margin-bottom: 20px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -232,6 +234,10 @@ body {
     margin: 50px 10px;
 }
 
+.bottom-content div, .bottom-content img {
+    width: 47%;
+}
+
 footer {
     text-align: center;
     margin: 75px 0 20px 0;
@@ -295,6 +301,18 @@ footer {
 
     .content-section {
         flex-direction: column;
+    }
+
+    .content-card {
+        width: 100%;
+    }
+
+    .bottom-content div {
+        width: 100%;
+    }
+
+    .services-info-img {
+        display: none;
     }
 
     .content-block {
